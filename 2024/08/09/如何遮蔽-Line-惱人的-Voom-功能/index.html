@@ -9,7 +9,7 @@
     
     <title>
         
-            Hello World |
+            如何遮蔽 Line 惱人的 Voom 功能? |
         
         Tommy Kao&#39;s Blog
     </title>
@@ -183,7 +183,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        Hello World
+                        如何遮蔽 Line 惱人的 Voom 功能?
                     </div>
                 
 
@@ -211,12 +211,12 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2024-08-05 20:05:34</span>
+                <span class="datetime">2024-08-09 00:38:19</span>
             </span>
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Fri Aug 09 2024 00:38:32 GMT+0800">2024-08-09 00:38:32</span>
+                <span class="datetime" data-updated="Sat Aug 10 2024 01:34:34 GMT+0800">2024-08-10 01:34:34</span>
             </span>
         
 
@@ -242,35 +242,33 @@
                     
 
                     
-                         <h2 id="Hexo-初體驗"><a href="#Hexo-初體驗" class="headerlink" title="[Hexo]初體驗"></a>[Hexo]初體驗</h2><h3 id="緣起"><a href="#緣起" class="headerlink" title="緣起"></a>緣起</h3><p>一直都有想做 blog 的想法，卻一直沒有付諸實行，這次，簡單紀錄一下我的步驟(省略部分已經安裝過的東西)與遇到的問題。</p>
-<h3 id="重點步驟"><a href="#重點步驟" class="headerlink" title="重點步驟"></a>重點步驟</h3><p>步驟 1</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-cli -g  <span class="comment">#安裝</span></span><br></pre></td></tr></table></figure>
+                         <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><blockquote>
+<p>Line 是台灣目前最廣泛使用的即時通訊軟體，無論年齡層高低，幾乎人人都在使用。然而，某次更新後推出的 Voom 短影音功能，由於 Line 對其內容缺乏控管，導致其中出現了許多不適合兒童觀看的內容，甚至包含不雅的畫面。 無論你是擔心孩子接觸到不當內容的家長，還是想要節省網路流量的使用者，只需按照以下簡單步驟，即可輕鬆屏蔽 Voom 功能。</p>
+</blockquote>
+<h2 id="如何屏蔽-Voom"><a href="#如何屏蔽-Voom" class="headerlink" title="如何屏蔽 Voom"></a>如何屏蔽 Voom</h2><h2 id="1-安裝免費-App-Lockdown"><a href="#1-安裝免費-App-Lockdown" class="headerlink" title="1. 安裝免費 App Lockdown"></a>1. 安裝免費 App Lockdown</h2><img     src="lockdown.jpg"   width="100">
 
-<p>步驟 2</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init myBlog  <span class="comment">#初始化</span></span><br></pre></td></tr></table></figure>
+<p><a class="link"   target="_blank" rel="noopener" href="https://apps.apple.com/tw/app/lockdown-privacy-vpn-proxy/id1469783711" >Lockdown - iOS<i class="fas fa-external-link-alt"></i></a><br><a class="link"   target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.radefffactory.lockdown&hl=zh_TW" >Lockdown - 安卓<i class="fas fa-external-link-alt"></i></a></p>
+<h2 id="2-打開-Lockdown-App"><a href="#2-打開-Lockdown-App" class="headerlink" title="2. 打開 Lockdown App"></a>2. 打開 Lockdown App</h2><h3 id="點擊上面的開關按鈕"><a href="#點擊上面的開關按鈕" class="headerlink" title="點擊上面的開關按鈕"></a>點擊上面的開關按鈕</h3><img     src="powerOn.jpg"   width="500">
 
-<p>步驟 3</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo cl   <span class="comment">#清空</span></span><br><span class="line">$ hexo g    <span class="comment">#generate 產生靜態html</span></span><br><span class="line">$ hexo d    <span class="comment">#deploy</span></span><br></pre></td></tr></table></figure>
+<h3 id="點擊我同意"><a href="#點擊我同意" class="headerlink" title="點擊我同意"></a>點擊我同意</h3><img     src="agree.jpg"   width="500">
 
-<h3 id="本機啟動"><a href="#本機啟動" class="headerlink" title="本機啟動"></a>本機啟動</h3><p>預設會啟動在 4000port，有些調整似乎要重新 gen 重新 server+F5 ，才會顯現。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="按下允許"><a href="#按下允許" class="headerlink" title="按下允許"></a>按下允許</h3><img     src="addVpn.jpg"   width="500">
 
-<h3 id="部屬到-github-page"><a href="#部屬到-github-page" class="headerlink" title="部屬到 github page"></a>部屬到 github page</h3><p>一開始覺得怪怪的，仔細端詳一下才知道這邊是純部屬靜態 html 頁面，咦!?那我的主題設定什麼的跑去哪了?看樣子要用另一個 branch 或 repo 來做版控。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h3 id="按下-Skip-Trial"><a href="#按下-Skip-Trial" class="headerlink" title="按下 Skip Trial"></a>按下 Skip Trial</h3><img     src="skip.jpg"   width="500">
 
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/tommy-kao/tommy-kao.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<h2 id="3-新增以下設定"><a href="#3-新增以下設定" class="headerlink" title="3. 新增以下設定"></a>3. 新增以下設定</h2><h3 id="點擊-blocklist"><a href="#點擊-blocklist" class="headerlink" title="點擊 blocklist"></a>點擊 blocklist</h3><img     src="blocklist.jpg"   width="500">
 
-<h3 id="主題"><a href="#主題" class="headerlink" title="主題"></a>主題</h3><p>試了幾種主題最後選了 keep 這個主題，覺得滿簡潔的，文件也比較完整，而且還有中文。</p>
-<p><a class="link"   target="_blank" rel="noopener" href="https://keep-docs.xpoet.cn/" >https://keep-docs.xpoet.cn/<i class="fas fa-external-link-alt"></i></a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-theme-keep</span><br></pre></td></tr></table></figure>
+<h3 id="點擊-custom"><a href="#點擊-custom" class="headerlink" title="點擊 custom"></a>點擊 custom</h3><img     src="custom.jpg"   width="500">
 
-<h3 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h3><p>比想像中的單純，僅須在<code>_config.yml</code> 設定以下</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># Option values: true | false</span></span><br><span class="line">  <span class="attr">use:</span> <span class="string">disqus</span></span><br><span class="line"></span><br><span class="line"><span class="attr">disqus:</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">tommy-kao</span> <span class="comment"># Disqus Shortname</span></span><br><span class="line">  <span class="attr">count:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="點擊-Domains-右邊的-號"><a href="#點擊-Domains-右邊的-號" class="headerlink" title="點擊 Domains 右邊的[+]號"></a>點擊 Domains 右邊的[+]號</h3><img     src="add.jpg"   width="500">
 
-<p>參考資料:</p>
-<p><a class="link"   target="_blank" rel="noopener" href="https://hackmd.io/@Heidi-Liu/note-hexo-github" >【學習筆記】如何使用 Hexo + GitHub Pages 架設個人網誌<i class="fas fa-external-link-alt"></i></a></p>
-<p><a class="link"   target="_blank" rel="noopener" href="https://medium.com/i-caught-a-code/hexo-%E7%84%A1%E7%97%9B%E5%85%A5%E5%9D%91%E5%9B%89-1a119a6805e5" >[教學] Hexo Blog 輕鬆架<i class="fas fa-external-link-alt"></i></a></p>
-<p><a class="link"   target="_blank" rel="noopener" href="https://buckychu.im/2020/09/23/how-to-delete-hexo-post/" >如何刪除 Hexo 已發佈的文章<i class="fas fa-external-link-alt"></i></a></p>
+<h3 id="輸入-voom-obs-line-scdn-net"><a href="#輸入-voom-obs-line-scdn-net" class="headerlink" title="輸入 voom-obs.line-scdn.net"></a>輸入 voom-obs.line-scdn.net</h3><img     src="domain.png"   width="500">
+
+<h3 id="確認右邊是-Blocked-狀態"><a href="#確認右邊是-Blocked-狀態" class="headerlink" title="確認右邊是 Blocked 狀態"></a>確認右邊是 Blocked 狀態</h3><h2 id="3-效果"><a href="#3-效果" class="headerlink" title="3. 效果"></a>3. 效果</h2><img     src="result.jpg"   width="500">
+
+<blockquote>
+<p>經過以上的設定，voom 的影音內容基本上已經被屏蔽了，希望本篇的內容對大家有幫助，內容歡迎轉載，請註明出處。</p>
+</blockquote>
 
                     
                 </div>
@@ -291,22 +289,22 @@
                 
                     <div class="post-nav border-box">
                         
-                            <div class="prev-post">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/2024/08/09/%E5%A6%82%E4%BD%95%E9%81%AE%E8%94%BD-Line-%E6%83%B1%E4%BA%BA%E7%9A%84-Voom-%E5%8A%9F%E8%83%BD/"
-                                   title="如何遮蔽 Line 惱人的 Voom 功能?"
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/08/05/hello-world/"
+                                   title="Hello World"
                                 >
-                                    <span class="left arrow-icon flex-center">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">如何遮蔽 Line 惱人的 Voom 功能?</span>
-                                        <span class="post-nav-item">Prev posts</span>
+                                        <span class="post-nav-title-item text-ellipsis">Hello World</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
                                     </span>
                                 </a>
                             </div>
-                        
                         
                     </div>
                 
