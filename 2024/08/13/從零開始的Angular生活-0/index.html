@@ -36,7 +36,7 @@
     
     <title>
         
-            Hello World |
+            從零開始的Angular生活(0)-如何開始 |
         
         Tommy Kao&#39;s Blog
     </title>
@@ -232,7 +232,7 @@
             <div class="post-content-bottom border-box">
                 
                     <div class="post-title">
-                        Hello World
+                        從零開始的Angular生活(0)-如何開始
                     </div>
                 
 
@@ -260,12 +260,12 @@
         
             <span class="meta-info-item post-create-date">
                 <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
-                <span class="datetime">2024-08-05 20:05:34</span>
+                <span class="datetime">2024-08-13 23:54:21</span>
             </span>
 
             <span class="meta-info-item post-update-date">
                 <i class="icon fa-solid fa-file-pen"></i>&nbsp;
-                <span class="datetime" data-updated="Tue Aug 13 2024 21:06:33 GMT+0800">2024-08-13 21:06:33</span>
+                <span class="datetime" data-updated="Fri Aug 23 2024 02:17:35 GMT+0800">2024-08-23 02:17:35</span>
             </span>
         
 
@@ -273,7 +273,7 @@
             <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
                 <ul class="post-category-ul">
                     
-                            <li class="category-item"><a href="/categories/Hexo/">Hexo</a></li>
+                            <li class="category-item"><a href="/categories/angular/">angular</a></li>
                         
                     
                 </ul>
@@ -284,7 +284,13 @@
             <span class="post-tag meta-info-item border-box">
                 <ul class="post-tag-ul">
                     
-                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/hexo/">hexo</a></li>
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/angular/">angular</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/frontend/">frontend</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a></li>
                         
                     
                 </ul>
@@ -313,35 +319,48 @@
                     
 
                     
-                         <h2 id="Hexo-初體驗"><a href="#Hexo-初體驗" class="headerlink" title="[Hexo]初體驗"></a>[Hexo]初體驗</h2><h3 id="緣起"><a href="#緣起" class="headerlink" title="緣起"></a>緣起</h3><p>一直都有想做 blog 的想法，卻一直沒有付諸實行，這次，簡單紀錄一下我的步驟(省略部分已經安裝過的東西)與遇到的問題。</p>
-<h3 id="重點步驟"><a href="#重點步驟" class="headerlink" title="重點步驟"></a>重點步驟</h3><p>步驟 1</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-cli -g  <span class="comment">#安裝</span></span><br></pre></td></tr></table></figure>
+                         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>開發了幾年了Angular專案，對於Angular還是有很多不了解的地方，希望可以透過寫文章，把自己學到的東西記錄下來。</p>
+<h1 id="一、環境建置"><a href="#一、環境建置" class="headerlink" title="一、環境建置"></a>一、環境建置</h1><p>安裝以下</p>
+<ol>
+<li><p>VSCODE - <a class="link"   target="_blank" rel="noopener" href="https://code.visualstudio.com/download" >https://code.visualstudio.com/download<i class="fas fa-external-link-alt"></i></a><br> 之後我們開發程式用的工具</p>
+</li>
+<li><p>nvm<br> 管理<code>Node.js</code>版本的工具<br> windows:  <a class="link"   target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases/download/1.1.12/nvm-setup.exe" >https://github.com/coreybutler/nvm-windows/releases/download/1.1.12/nvm-setup.exe<i class="fas fa-external-link-alt"></i></a></p>
+<p> mac: 請看這篇 <a class="link"   target="_blank" rel="noopener" href="https://www.casper.tw/development/2022/01/10/install-nvm/" >安裝 nvm 環境，Node.js 開發者必學<i class="fas fa-external-link-alt"></i></a></p>
+</li>
+<li><p>打開 VSCODE ，點擊左上角 File -&gt; Open Folder… -&gt; 選擇一個想要放程式的資料夾</p>
+</li>
+<li><p>確認要使用的<code>Node.js</code>版本<br> 前往[Angular官網] (<a class="link"   target="_blank" rel="noopener" href="https://angular.dev/installation#prerequisites" >https://angular.dev/installation#prerequisites<i class="fas fa-external-link-alt"></i></a>)<br> 目前的版本為Node.js - v^18.9.1 or newer</p>
+</li>
+<li><p>安裝<code>Node.js</code><br> 打開終端機: 點擊左上角 View -&gt; Terminal ，或是按下Ctrl + &#96; (Esc下面那顆)</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install 18.9.1</span><br></pre></td></tr></table></figure>
 
-<p>步驟 2</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init myBlog  <span class="comment">#初始化</span></span><br></pre></td></tr></table></figure>
+<p> 安裝完之後使用此版本</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm use 18.9.1</span><br></pre></td></tr></table></figure></li>
+<li><p>安裝<code>angular/cli</code></p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn add -g @angular/cli</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="二、開始建立第一個Angular專案"><a href="#二、開始建立第一個Angular專案" class="headerlink" title="二、開始建立第一個Angular專案"></a>二、開始建立第一個Angular專案</h1><p>在Terminal輸入以下</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ng new myNgProject</span><br></pre></td></tr></table></figure>
 
-<p>步驟 3</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo cl   <span class="comment">#清空</span></span><br><span class="line">$ hexo g    <span class="comment">#generate 產生靜態html</span></span><br><span class="line">$ hexo d    <span class="comment">#deploy</span></span><br></pre></td></tr></table></figure>
+<p>會看到以下選項</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">? Which stylesheet format would you like to use?</span><br><span class="line">  CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ] </span><br><span class="line">&gt; Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ] </span><br><span class="line">  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ] </span><br><span class="line">  Less            [ http://lesscss.org                                             ]</span><br></pre></td></tr></table></figure>
+<p>我選SCSS</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">? Do you want to <span class="built_in">enable</span> Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? (y/N)</span><br></pre></td></tr></table></figure>
 
-<h3 id="本機啟動"><a href="#本機啟動" class="headerlink" title="本機啟動"></a>本機啟動</h3><p>預設會啟動在 4000port，有些調整似乎要重新 gen 重新 server+F5 ，才會顯現。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>比較少做SSR專案，想說試試看，所以我輸入y</p>
+<img     src="ngNew.png"   width="700">
 
-<h3 id="部屬到-github-page"><a href="#部屬到-github-page" class="headerlink" title="部屬到 github page"></a>部屬到 github page</h3><p>一開始覺得怪怪的，仔細端詳一下才知道這邊是純部屬靜態 html 頁面，咦!?那我的主題設定什麼的跑去哪了?看樣子要用另一個 branch 或 repo 來做版控。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>啟動開發伺服器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn start</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span> <span class="string">https://github.com/tommy-kao/tommy-kao.github.io.git</span></span><br><span class="line">  <span class="attr">branch:</span> <span class="string">master</span></span><br></pre></td></tr></table></figure>
+<img     src="ngServe.png"   width="700">
 
-<h3 id="主題"><a href="#主題" class="headerlink" title="主題"></a>主題</h3><p>試了幾種主題最後選了 keep 這個主題，覺得滿簡潔的，文件也比較完整，而且還有中文。</p>
-<p><a class="link"   target="_blank" rel="noopener" href="https://keep-docs.xpoet.cn/" >https://keep-docs.xpoet.cn/<i class="fas fa-external-link-alt"></i></a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add hexo-theme-keep</span><br></pre></td></tr></table></figure>
 
-<h3 id="Disqus"><a href="#Disqus" class="headerlink" title="Disqus"></a>Disqus</h3><p>比想像中的單純，僅須在<code>_config.yml</code> 設定以下</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">comment:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span> <span class="comment"># Option values: true | false</span></span><br><span class="line">  <span class="attr">use:</span> <span class="string">disqus</span></span><br><span class="line"></span><br><span class="line"><span class="attr">disqus:</span></span><br><span class="line">  <span class="attr">shortname:</span> <span class="string">tommy-kao</span> <span class="comment"># Disqus Shortname</span></span><br><span class="line">  <span class="attr">count:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<p>可以對著<a class="link"   target="_blank" rel="noopener" href="http://localhost:4200/%E4%BD%BF%E7%94%A8Ctrl+%E6%BB%91%E9%BC%A0%E9%BB%9E%E6%93%8A%EF%BC%8C%E5%B0%B1%E5%8F%AF%E4%BB%A5%E7%9B%B4%E6%8E%A5%E5%89%8D%E5%BE%80%E9%A0%81%E9%9D%A2%E3%80%82" >http://localhost:4200/使用Ctrl+滑鼠點擊，就可以直接前往頁面。<i class="fas fa-external-link-alt"></i></a></p>
+<p>會看到以下畫面，就算完成今天的課程了。</p>
+<img     src="defaultPage.png"   width="700">
 
-<p>參考資料:</p>
-<p><a class="link"   target="_blank" rel="noopener" href="https://hackmd.io/@Heidi-Liu/note-hexo-github" >【學習筆記】如何使用 Hexo + GitHub Pages 架設個人網誌<i class="fas fa-external-link-alt"></i></a></p>
-<p><a class="link"   target="_blank" rel="noopener" href="https://medium.com/i-caught-a-code/hexo-%E7%84%A1%E7%97%9B%E5%85%A5%E5%9D%91%E5%9B%89-1a119a6805e5" >[教學] Hexo Blog 輕鬆架<i class="fas fa-external-link-alt"></i></a></p>
-<p><a class="link"   target="_blank" rel="noopener" href="https://buckychu.im/2020/09/23/how-to-delete-hexo-post/" >如何刪除 Hexo 已發佈的文章<i class="fas fa-external-link-alt"></i></a></p>
+<h1 id="小結與下一步"><a href="#小結與下一步" class="headerlink" title="小結與下一步"></a>小結與下一步</h1><p>總結：經過以上的步驟，相信大家都成功建立了一個Angular專案，但這只是個開始，接下來會一步一步的把它慢慢改造，也順便練習一些Angular的技巧與基本概念。</p>
 
                     
                 </div>
@@ -354,7 +373,15 @@
                             <ul class="post-tags-box border-box">
                                 
                                     <li class="tag-item border-box">
-                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/hexo/">hexo</a>
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/angular/">angular</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/frontend/">frontend</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
                                     </li>
                                 
                             </ul>
@@ -370,22 +397,22 @@
                 
                     <div class="post-nav border-box">
                         
-                            <div class="prev-post">
-                                <a class="prev"
-                                   rel="prev"
-                                   href="/2024/08/09/%E5%A6%82%E4%BD%95%E9%81%AE%E8%94%BD-Line-%E6%83%B1%E4%BA%BA%E7%9A%84-Voom-%E5%8A%9F%E8%83%BD/"
-                                   title="如何遮蔽 Line 惱人的 Voom 功能?"
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/08/10/Line-%E3%81%AE-Voom-%E6%A9%9F%E8%83%BD%E3%82%92%E3%81%99%E3%81%B9%E3%81%A6%E3%83%96%E3%83%AD%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/"
+                                   title="Line の Voom 機能をすべてブロックする方法"
                                 >
-                                    <span class="left arrow-icon flex-center">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
                                     <span class="title flex-center">
-                                        <span class="post-nav-title-item text-ellipsis">如何遮蔽 Line 惱人的 Voom 功能?</span>
-                                        <span class="post-nav-item">Prev posts</span>
+                                        <span class="post-nav-title-item text-ellipsis">Line の Voom 機能をすべてブロックする方法</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
                                     </span>
                                 </a>
                             </div>
-                        
                         
                     </div>
                 
