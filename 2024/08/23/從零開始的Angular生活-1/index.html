@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+      <!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-4GEV4LQS17"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "theme.google_analytics.tracking_id");
+</script>
+
+    
+
+    
+      <script
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4244321752994555"
+  crossorigin="anonymous"
+></script>
+
+    
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="Tommy Kao">
+    
+    <title>
+        
+            從零開始的Angular生活(1)-基本語法 |
+        
+        Tommy Kao&#39;s Blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+        <link rel="shortcut icon" href="/images/logo.svg">
+    
+    
+<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/regular.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/solid.min.css">
+
+    
+<link rel="stylesheet" href="/font/css/brands.min.css">
+
+    
+    <script class="keep-theme-configurations">
+    const KEEP = window.KEEP || {}
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en"}
+    KEEP.theme_config = {"base_info":{"primary_color":"#0066cc","title":"Tommy Kao's Blog","author":"Tommy Kao","avatar":"/images/avatar.png","logo":"/images/logo.svg","favicon":"/images/logo.svg","mode":"light"},"menu":{"home":"/","archives":"/archives","tags":"/tags","tools":"/tools"},"first_screen":{"enable":false,"background_img":"/images/bg.svg","background_img_dark":"/images/bg.svg","description":"Keep writing and Keep loving.","hitokoto":false},"social_contact":{"enable":false,"links":{"github":null,"weixin":null,"qq":null,"weibo":null,"zhihu":null,"twitter":null,"x":null,"facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":false,"hide_header":true},"home":{"announcement":null,"category":false,"tag":false,"post_datetime":"created"},"post":{"author_badge":{"enable":true,"level_badge":true,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":false,"min2read":false},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":false,"share":false,"reward":{"enable":false,"img_link":null,"text":null,"icon":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":false,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":true,"site_uv":false,"site_pv":true,"page_pv":true}},"local_search":{"enable":false,"preload":false},"comment":{"enable":true,"use":"disqus","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.36"},"waline":{"server_url":null,"reaction":false,"version":"3.2.1"},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":"tommy-kao","count":true}},"rss":{"enable":false},"lazyload":{"enable":false},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":false},"footer":{"since":2024,"word_count":false,"site_deploy":{"enable":false,"provider":"github","url":null},"record":{"enable":false,"list":[{"code":null,"link":null}]}},"inject":{"enable":false,"css":[null],"js":[null]},"google_analytics":{"enable":true,"tracking_id":"G-4GEV4LQS17","localhost_ignored":true},"google_adsense":{"enable":true,"google_ad_client_id":"pub-4244321752994555"},"root":"","source_data":{"tools":[{"category":"自製","anchorId":"JUU4JTg3JUFBJUU4JUEzJUJE0"},{"name":"Gojuon-Learning(Angular)","link":"https://gojuon-learning.netlify.app/","description":"透過雙消遊戲背日文單詞與五十音","image":"https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Japanese_Hiragana_kyokashotai_A.svg/480px-Japanese_Hiragana_kyokashotai_A.svg.png"},{"name":"SSD1306 Matrix Led Editor(Angular)","link":"https://ssd1306-as-matrix-led-editor.netlify.app","description":"製作SSD1306顯示器矩陣動畫的編輯器","image":"https://i0.wp.com/www.multanelectronics.com/wp-content/uploads/2020/02/OLED-Display-for-Arduino-interface-SSD1306.jpg?resize=510%2C510&ssl=1"},{"name":"第一次做的網頁(html)","link":"https://brianblankinship.surge.sh/","description":"幫朋友做的","image":"https://brianblankinship.surge.sh/img/fav1.png"}]},"version":"4.2.1"}
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"}
+    KEEP.language_code_block = {"copy":"Copy code","copied":"Copied","fold":"Fold code block","folded":"Folded"}
+    KEEP.language_copy_copyright = {"copy":"Copy copyright info","copied":"Copied","title":"Original post title","author":"Original post author","link":"Original post link"}
+  </script>
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+
+    
+</div>
+
+
+
+<main class="page-container border-box">
+    <!-- home first screen  -->
+    
+
+    <!-- page content -->
+    <div class="page-main-content border-box">
+        <div class="page-main-content-top">
+            
+<header class="header-wrapper">
+
+    <div class="border-box header-content">
+        <div class="left flex-start border-box">
+            
+                <a class="logo-image border-box" href="/">
+                    <img src="/images/logo.svg">
+                </a>
+            
+            <a class="site-name border-box" href="/">
+               Tommy Kao&#39;s Blog
+            </a>
+        </div>
+
+        <div class="right border-box">
+            <div class="pc border-box">
+                <ul class="menu-list border-box">
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/">
+                                
+                                HOME
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/archives">
+                                
+                                ARCHIVES
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tags">
+                                
+                                TAGS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                        
+                        <li class="menu-item flex-start border-box">
+                            <a class="menu-text-color border-box" href="/tools">
+                                
+                                TOOLS
+                                
+                            </a>
+                            
+                        </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="mobile border-box flex-start">
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list border-box">
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/">
+                            
+                            HOME
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/archives">
+                            
+                            ARCHIVES
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tags">
+                            
+                            TAGS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+                
+                <li class="drawer-menu-item border-box not-sub-menu">
+                    <label class="drawer-menu-label border-box">
+                        <a class="drawer-menu-text-color left-side flex-start border-box" href="/tools">
+                            
+                            TOOLS
+                        </a>
+                        
+                    </label>
+                    
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle border-box">
+
+            <div class="main-content border-box">
+                
+
+                    
+<div class="fade-in-down-animation">
+    <div class="post-page-container border-box">
+        <div class="post-content-container border-box">
+            
+
+            <div class="post-content-bottom border-box">
+                
+                    <div class="post-title">
+                        從零開始的Angular生活(1)-基本語法
+                    </div>
+                
+
+                
+                    <div class="post-header border-box">
+                        
+                            <div class="avatar-box border-box">
+                                <img src="/images/avatar.png">
+                            </div>
+                        
+                        <div class="info-box">
+                            <div class="author border-box">
+                                <span class="name">Tommy Kao</span>
+                                
+                                    <span class="author-badge">Lv1</span>
+                                
+                            </div>
+                            <div class="meta-info border-box">
+                                
+
+<div class="post-meta-info-container border-box post">
+    <div class="post-meta-info border-box">
+        
+
+        
+            <span class="meta-info-item post-create-date">
+                <i class="icon fa-solid fa-calendar-plus"></i>&nbsp;
+                <span class="datetime">2024-08-23 21:03:23</span>
+            </span>
+
+            <span class="meta-info-item post-update-date">
+                <i class="icon fa-solid fa-file-pen"></i>&nbsp;
+                <span class="datetime" data-updated="Sat Aug 31 2024 00:42:11 GMT+0800">2024-08-31 00:42:11</span>
+            </span>
+        
+
+        
+            <span class="meta-info-item post-category border-box"><i class="icon fas fa-folder"></i>&nbsp;
+                <ul class="post-category-ul">
+                    
+                            <li class="category-item"><a href="/categories/angular/">angular</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+            <span class="post-tag meta-info-item border-box">
+                <ul class="post-tag-ul">
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/angular/">angular</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/frontend/">frontend</a></li>
+                        
+                    
+                            <li class="tag-item"><span class="tag-separator"><i class="icon fas fa-hashtag"></i></span><a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a></li>
+                        
+                    
+                </ul>
+            </span>
+        
+
+        
+        
+        
+        
+            <span class="meta-info-item post-pv">
+                <i class="icon fas fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+            </span>
+        
+    </div>
+
+    
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+                
+
+                <div class="post-content keep-markdown-body ">
+                    
+
+                    
+                         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>上回我們已經透過angular cli建立了一個初始專案，這次來說說這個專案裡面的東東。</p>
+<h1 id="一、簡介"><a href="#一、簡介" class="headerlink" title="一、簡介"></a>一、簡介</h1><p>一般常見的網頁都有個入口點&#x2F;進入點，一般常見的預設是<strong>index.html</strong>，本專案的入口點是<strong>myNgProject\src\index.html</strong>，裡面的內容如下:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!doctype <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;en&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;utf-8&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">title</span>&gt;</span>MyNgProject<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">base</span> <span class="attr">href</span>=<span class="string">&quot;/&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;icon&quot;</span> <span class="attr">type</span>=<span class="string">&quot;image/x-icon&quot;</span> <span class="attr">href</span>=<span class="string">&quot;favicon.ico&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">app-root</span>&gt;</span><span class="tag">&lt;/<span class="name">app-root</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>其中最重要的就是<code>&lt;app-root&gt;&lt;/app-root&gt;</code>，他看起來像是自訂的<strong>tag</strong>，實際上是一個<strong>Angular元件</strong>，對應到的是<strong>Angular元件</strong>的<strong>selector</strong>，打開VSCODE的搜尋視窗，可以搜尋到<code>selector: &#39;app-root&#39;</code></p>
+<img     src="selector.png"   width="700">
+
+<p>他其實是在<code>app.component.ts</code>的<code>AppComponent</code>這個名稱的**元件(component)**裡面所定義的，如下</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">Component</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/core&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123; <span class="title class_">RouterOutlet</span> &#125; <span class="keyword">from</span> <span class="string">&#x27;@angular/router&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Component</span>(&#123;</span><br><span class="line">  <span class="attr">selector</span>: <span class="string">&#x27;app-root&#x27;</span>,</span><br><span class="line">  <span class="attr">standalone</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">imports</span>: [<span class="title class_">RouterOutlet</span>],</span><br><span class="line">  <span class="attr">templateUrl</span>: <span class="string">&#x27;./app.component.html&#x27;</span>,</span><br><span class="line">  <span class="attr">styleUrl</span>: <span class="string">&#x27;./app.component.scss&#x27;</span></span><br><span class="line">&#125;)</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">class</span> <span class="title class_">AppComponent</span> &#123;</span><br><span class="line">  title = <span class="string">&#x27;myNgProject&#x27;</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>打開程式我們可以看到除了<code>selector</code>還有<br><code>standalone</code><br><code>imports</code><br><code>templateUrl</code><br><code>styleUrl</code></p>
+<p>我們先看<code>templateUrl</code>是什麼，他基本上就是一個<strong>html</strong>格式檔案<code>app.component.html</code>與本檔案<code>app.component.ts</code>的相對路徑，他可以說是代表了<code>AppComponent</code>這個元件的視圖、畫面，而<code>app.component.ts</code>負責的是這個<strong>元件</strong>的<strong>邏輯</strong>部分，<code>styleUrl</code>則是<strong>scss</strong>的部分，但我比較習慣的方式是透過統一的css系統例如<code>bootstrap</code>,<code>primeflex</code>來處理，而不是每個元件寫一個<strong>scss</strong>檔案。</p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>檔名</th>
+<th>用途</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>app.component.html</td>
+<td>視圖&#x2F;畫面</td>
+</tr>
+<tr>
+<td>app.component.ts</td>
+<td>邏輯</td>
+</tr>
+<tr>
+<td>app.component.scss</td>
+<td>scss</td>
+</tr>
+<tr>
+<td>app.component.spec.ts</td>
+<td>測試用</td>
+</tr>
+</tbody></table>
+<ol>
+<li>app.component.html</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-pseudo">:host</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attr">--bright-blue</span>: <span class="built_in">oklch</span>(<span class="number">51.01%</span> <span class="number">0.274</span> <span class="number">263.83</span>);</span></span><br><span class="line"><span class="language-css">    <span class="attr">--electric-violet</span>: <span class="built_in">oklch</span>(<span class="number">53.18%</span> <span class="number">0.28</span> <span class="number">296.97</span>);</span></span><br><span class="line"><span class="language-css">    <span class="attr">--french-violet</span>: <span class="built_in">oklch</span>(<span class="number">47.66%</span> <span class="number">0.246</span> <span class="number">305.88</span>);</span></span><br><span class="line"><span class="language-css">    <span class="attr">--vivid-pink</span>: <span class="built_in">oklch</span>(<span class="number">69.02%</span> <span class="number">0.277</span> <span class="number">332.77</span>);</span></span><br><span class="line"><span class="language-css">    <span class="attr">--hot-red</span>: <span class="built_in">oklch</span>(<span class="number">61.42%</span> <span class="number">0.238</span> <span class="number">15.34</span>);</span></span><br><span class="line"><span class="language-css">    <span class="attr">--orange-red</span>: <span class="built_in">oklch</span>(<span class="number">63.32%</span> <span class="number">0.24</span> <span class="number">31.68</span>);</span></span><br><span class="line"><span class="language-css"></span></span><br><span class="line"><span class="language-css">    <span class="attr">--gray-900</span>: <span class="built_in">oklch</span>(<span class="number">19.37%</span> <span class="number">0.006</span> <span class="number">300.98</span>);</span></span><br><span class="line"><span class="language-css">    <span class="attr">--gray-700</span>: <span class="built_in">oklch</span>(<span class="number">36.98%</span> <span class="number">0.014</span> <span class="number">302.71</span>);</span></span><br><span class="line"><span class="language-css">    <span class="attr">--gray-400</span>: <span class="built_in">oklch</span>(<span class="number">70.9%</span> <span class="number">0.015</span> <span class="number">304.04</span>);</span></span><br><span class="line"><span class="language-css">    ........略</span></span><br></pre></td></tr></table></figure>
+
+<p>我們可以看到上面有一大段<strong>嵌入 embed</strong>的style在<code>&lt;style&gt;&lt;/style&gt;</code>裡面，一般會寫在<code>app.component.scss</code>裡面，<br>記得我們創專案的時候有四個選項讓我們選嗎?不過範例可能不確定你會用哪一種，所以統一寫成嵌入的版本(我猜的)</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">? Which stylesheet format would you like to use?</span><br><span class="line">  CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ] </span><br><span class="line">&gt; Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ] </span><br><span class="line">  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ] </span><br><span class="line">  Less            [ http://lesscss.org                                             ]</span><br></pre></td></tr></table></figure>
+
+<p>我們來動手把<code>&lt;style&gt;&lt;/style&gt;</code>裡面的東西移動到<code>app.component.scss</code>裡面，結果應該不會有任何差別，只是方便之後如果要維護css的話，有個獨立的檔案，比較乾淨，也避免動到不相關的部分。</p>
+<hr>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">main</span> <span class="attr">class</span>=<span class="string">&quot;main&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;content&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;left-side&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">svg</span>&gt;</span></span><br><span class="line">        ...內容物是Angular的logo</span><br><span class="line">      <span class="tag">&lt;/<span class="name">svg</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Hello, &#123;&#123; title &#125;&#125;<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">p</span>&gt;</span>Congratulations! Your app is running. 🎉<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<img     src="myNgProject.png"   width="700">
+
+<p>畫面上我們看到的<code>Hello, myNgProject</code>在<strong>html</strong>上對應到的是<code>Hello, &#123;&#123; title &#125;&#125;</code>，在Angular的<strong>html</strong>之中，只要用兩個大括號<code>&#123;&#123; &#125;&#125;</code>包起來的，中間的就是變數，來源於<strong>ts</strong>檔案裡面的</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">title = <span class="string">&#x27;myNgProject&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>這段的作用是宣告title，並且賦值為<code>&#39;myNgProject&#39;</code>這個<strong>字串</strong>，如果你嘗試修改<code>title = &#39;myNgProject&#39;</code>右邊的文字，畫面上的文字也會跟著產生變化。</p>
+<hr>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;pill-group&quot;&gt;</span><br><span class="line">    @for (item of [</span><br><span class="line">        &#123; title: &#x27;Explore the Docs&#x27;, link: &#x27;https://angular.dev&#x27; &#125;,</span><br><span class="line">        &#123; title: &#x27;Learn with Tutorials&#x27;, link: &#x27;https://angular.dev/tutorials&#x27; &#125;,</span><br><span class="line">        &#123; title: &#x27;CLI Docs&#x27;, link: &#x27;https://angular.dev/tools/cli&#x27; &#125;,</span><br><span class="line">        &#123; title: &#x27;Angular Language Service&#x27;, link: &#x27;https://angular.dev/tools/language-service&#x27; &#125;,</span><br><span class="line">        &#123; title: &#x27;Angular DevTools&#x27;, link: &#x27;https://angular.dev/tools/devtools&#x27; &#125;,</span><br><span class="line">    ]; track item.title) &#123;</span><br><span class="line">        &lt;a</span><br><span class="line">        class=&quot;pill&quot;</span><br><span class="line">        [href]=&quot;item.link&quot;</span><br><span class="line">        target=&quot;_blank&quot;</span><br><span class="line">        rel=&quot;noopener&quot;</span><br><span class="line">        &gt;</span><br><span class="line">        &lt;span&gt;&#123;&#123; item.title &#125;&#125;&lt;/span&gt;</span><br><span class="line">        &lt;svg</span><br><span class="line">            xmlns=&quot;http://www.w3.org/2000/svg&quot;</span><br><span class="line">            height=&quot;14&quot;</span><br><span class="line">            viewBox=&quot;0 -960 960 960&quot;</span><br><span class="line">            width=&quot;14&quot;</span><br><span class="line">            fill=&quot;currentColor&quot;</span><br><span class="line">        &gt;</span><br><span class="line">            &lt;path</span><br><span class="line">            d=&quot;M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z&quot;</span><br><span class="line">            /&gt;</span><br><span class="line">        &lt;/svg&gt;</span><br><span class="line">        &lt;/a&gt;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p>上面的程式出現了@for，這是angular近幾個版本出現的新語法，舊版本使用的是<code>&lt;div *ngFor=&quot;let item of items&quot;&gt;&lt;/div&gt;</code>，我是不建議把of後面陣列寫在<strong>html</strong>裡面的這種寫法，所以我在ts的AppComponent {} 裡面命名一個變數為item<strong>s</strong>，並把以下陣列移到裡面，<code>&lt;svg&gt;...&lt;/svg&gt;</code>這段有點礙眼就只是一個icon，所以我把他移掉，下面的<code>social-links</code>也沒什麼用就先移掉。</p>
+<figure class="highlight typescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">items = [</span><br><span class="line">        &#123; <span class="attr">title</span>: <span class="string">&#x27;Explore the Docs&#x27;</span>, <span class="attr">link</span>: <span class="string">&#x27;https://angular.dev&#x27;</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">title</span>: <span class="string">&#x27;Learn with Tutorials&#x27;</span>, <span class="attr">link</span>: <span class="string">&#x27;https://angular.dev/tutorials&#x27;</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">title</span>: <span class="string">&#x27;CLI Docs&#x27;</span>, <span class="attr">link</span>: <span class="string">&#x27;https://angular.dev/tools/cli&#x27;</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">title</span>: <span class="string">&#x27;Angular Language Service&#x27;</span>, <span class="attr">link</span>: <span class="string">&#x27;https://angular.dev/tools/language-service&#x27;</span> &#125;,</span><br><span class="line">        &#123; <span class="attr">title</span>: <span class="string">&#x27;Angular DevTools&#x27;</span>, <span class="attr">link</span>: <span class="string">&#x27;https://angular.dev/tools/devtools&#x27;</span> &#125;,</span><br><span class="line">    ]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>改寫後的html</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@for (item of items; track item.title)&#123;</span><br><span class="line">    <span class="comment">&lt;!-- 要產生出來的東西，可以是html tag, angular component, 或者其他 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;pill&quot;</span> [<span class="attr">href</span>]=<span class="string">&quot;item.link&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;noopener&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;&#123; item.title &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>item 算是每個陣列元素被取出之後的變數名稱，items是整個陣列，track item.title代表是用item的title作為唯一辨識碼，所以如果title重複的話，應該會報錯以下，所以以後決定哪個值來當作track的話記得<code>必須是唯一不重複</code>的原則</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">NG0955: The provided track expression resulted <span class="keyword">in</span> duplicated keys <span class="keyword">for</span> a given collection. Adjust the tracking expression such that it uniquely identifies all the items <span class="keyword">in</span> the collection. Duplicated keys were:</span><br><span class="line">key <span class="string">&quot;Angular DevTools&quot;</span> at index <span class="string">&quot;4&quot;</span> and <span class="string">&quot;5&quot;</span>. Find more at https://angular.dev/errors/NG0955</span><br></pre></td></tr></table></figure>
+
+<p>接著我們來把for迴圈加上index，加入<code>let idx = $index</code>，前面用<code>;</code>隔開</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">@for (item of items; track item.title; let idx = $index)&#123;</span><br><span class="line">    <span class="tag">&lt;<span class="name">a</span> <span class="attr">class</span>=<span class="string">&quot;pill&quot;</span> [<span class="attr">href</span>]=<span class="string">&quot;item.link&quot;</span> <span class="attr">target</span>=<span class="string">&quot;_blank&quot;</span> <span class="attr">rel</span>=<span class="string">&quot;noopener&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">span</span>&gt;</span>&#123;&#123; idx &#125;&#125;.&#123;&#123; item.title &#125;&#125;<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>我們就會得到以下的結果</p>
+<img     src="index.png"   width="700">
+
+<p>可以看到每個連結的前面都被加上了數字，值得注意的是大部分程式語言都是從0起算，但對於一般使用者來說可能從1開始算是比較符合生活經驗的，所以我們可以改寫成<code>&lt;span&gt;&#123;&#123; idx + 1 &#125;&#125;.&#123;&#123; item.title &#125;&#125;&lt;/span&gt;</code>。</p>
+<h1 id="下一次我們來繼續介紹其他語法如if、switch-case。"><a href="#下一次我們來繼續介紹其他語法如if、switch-case。" class="headerlink" title="下一次我們來繼續介紹其他語法如if、switch case。"></a>下一次我們來繼續介紹其他語法如if、switch case。</h1><blockquote>
+<p>如果對於html不是很熟悉的話，推薦可以報名下面由<a class="link"   target="_blank" rel="noopener" href="https://train.csie.ntu.edu.tw/train/teacher.php?id=114" >黃安聖老師<i class="fas fa-external-link-alt"></i></a>開設的課程<br><a class="link"   target="_blank" rel="noopener" href="https://train.csie.ntu.edu.tw/train/courses.php?q=%E7%B6%B2%E9%A0%81%E8%A8%AD%E8%A8%88%E5%9F%BA%E7%A4%8E%E7%8F%AD" >台大資訊系統訓練班-網頁設計基礎班<i class="fas fa-external-link-alt"></i></a></p>
+</blockquote>
+
+                    
+                </div>
+
+                
+
+                <div class="post-bottom-tags-and-share border-box">
+                    <div>
+                        
+                            <ul class="post-tags-box border-box">
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/angular/">angular</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/frontend/">frontend</a>
+                                    </li>
+                                
+                                    <li class="tag-item border-box">
+                                        <i class="icon fas fa-hashtag"></i>&nbsp;<a href="/tags/%E5%89%8D%E7%AB%AF/">前端</a>
+                                    </li>
+                                
+                            </ul>
+                        
+                    </div>
+                    <div>
+                        
+                    </div>
+                </div>
+
+                
+
+                
+                    <div class="post-nav border-box">
+                        
+                        
+                            <div class="next-post">
+                                <a class="next"
+                                   rel="next"
+                                   href="/2024/08/13/%E5%BE%9E%E9%9B%B6%E9%96%8B%E5%A7%8B%E7%9A%84Angular%E7%94%9F%E6%B4%BB-0/"
+                                   title="從零開始的Angular生活(0)-如何開始"
+                                >
+                                    <span class="title flex-center">
+                                        <span class="post-nav-title-item text-ellipsis">從零開始的Angular生活(0)-如何開始</span>
+                                        <span class="post-nav-item">Next posts</span>
+                                    </span>
+                                    <span class="right arrow-icon flex-center">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        
+                    </div>
+                
+
+                
+                    
+
+
+    <div class="comments-container border-box">
+        <div id="comments-anchor" class="comment-area-title border-box">
+            <i class="fas fa-comments"></i>&nbsp;Comments
+        </div>
+        <div class="comment-plugin-fail border-box">
+    <span class="fail-tip">Comment plugin failed to load</span>
+    <button class="reload keep-button">Click to reload</button>
+</div>
+<div class="comment-plugin-loading flex-center border-box">
+    <i class="loading-icon fa-solid fa-spinner fa-spin"></i>
+    <span class="load-tip">Loading comment plugin</span>
+</div>
+<script data-pjax>
+  window.KeepCommentPlugin = {}
+  window.KeepCommentPlugin.hideLoading = () => {
+    const cplDom = document.querySelector('.comments-container .comment-plugin-loading')
+    cplDom.style.display = 'none'
+  }
+  window.KeepCommentPlugin.loadFailHandle = () => {
+    window.KeepCommentPlugin.hideLoading()
+    const cpfDom = document.querySelector('.comments-container .comment-plugin-fail')
+    cpfDom.style.display = 'flex'
+    cpfDom.querySelector('.reload').addEventListener('click', () => {
+      window.location.reload()
+    })
+  }
+</script>
+
+        
+            
+
+    <div class="disqus-comments-container">
+        <div id="disqus_thread"></div>
+        <script 
+                onerror="window.KeepCommentPlugin.loadFailHandle()"
+        >
+          if (!window.KeepCommentPlugin?.initDisqus) {
+            window.KeepCommentPlugin.initDisqus = () => {
+              const script = document.createElement('script')
+              script.async = true
+              script.src = '//tommy-kao.disqus.com/embed.js'
+              script.setAttribute('data-timestamp', `${Date.now()}`)
+              document.querySelector('.disqus-comments-container').appendChild(script)
+              script.onerror = () => {
+                window.KeepCommentPlugin.loadFailHandle()
+              }
+              script.onload = () => {
+                window.KeepCommentPlugin.hideLoading()
+              }
+            }
+          }
+
+          if ('false' === "true") {
+            setTimeout(() => {
+              window.KeepCommentPlugin.initDisqus()
+            }, 1000)
+          } else {
+            window.addEventListener("DOMContentLoaded", window.KeepCommentPlugin.initDisqus)
+          }
+        </script>
+        <script id="dsq-count-scr" src="//tommy-kao.disqus.com/count.js" async></script>
+    </div>
+
+
+        
+    </div>
+
+
+
+
+
+                
+            </div>
+        </div>
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+        </div>
+
+        <div class="page-main-content-bottom border-box">
+            
+<footer class="footer border-box">
+    <div class="copyright-info info-item">
+        &copy;&nbsp;<span>2024</span>&nbsp;-&nbsp;2024
+        
+            &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Tommy Kao</a>
+        
+    </div>
+
+    <div class="theme-info info-item">
+        Powered by&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;&&nbsp;Theme&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
+    </div>
+
+    
+
+    
+        <div class="count-info info-item">
+            
+
+            
+
+            
+                <span class="count-item border-box pv">
+                    <span class="item-type border-box">Page View</span>
+                    <span class="item-value border-box pv" id="busuanzi_value_site_pv"></span>
+                </span>
+            
+        </div>
+    
+
+    
+</footer>
+
+        </div>
+    </div>
+
+    <!-- post tools -->
+    
+        <div class="post-tools right-toc">
+            <div class="post-tools-container border-box">
+    <ul class="post-tools-list border-box">
+        <!-- PC encrypt again -->
+        
+
+        <!-- PC TOC show toggle -->
+        
+
+        <!-- PC go comment -->
+        
+            <li class="tools-item flex-center go-to-comments">
+                <i class="fas fa-comment"></i>
+                <span class="post-comments-count"></span>
+            </li>
+        
+
+        <!-- PC full screen -->
+        <li class="tools-item flex-center full-screen">
+            <i class="fa-solid fa-expand"></i>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    
+
+    <!-- side tools -->
+    <div class="side-tools">
+        <div class="side-tools-container border-box ">
+    <ul class="side-tools-list side-tools-show-handle border-box">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <!-- toggle mode -->
+        
+
+        <!-- rss -->
+        
+
+        <!-- to bottom -->
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list border-box">
+        
+
+        
+            <li class="tools-item go-to-comments-tablet flex-center">
+                <i class="fas fa-comment"></i>
+            </li>
+        
+
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+
+        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
+            <i class="arrow fas fa-arrow-up"></i>
+            <span class="percent"></span>
+        </li>
+    </ul>
+</div>
+
+    </div>
+
+    <!-- image mask -->
+    <div class="zoom-in-image-mask">
+    <img class="zoom-in-image">
+</div>
+
+
+    <!-- local search -->
+    
+
+    <!-- tablet toc -->
+    
+</main>
+
+
+
+
+
+<!-- common js -->
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/header-shrink.js"></script>
+
+<script src="/js/back2top.js"></script>
+
+<script src="/js/toggle-theme.js"></script>
+
+<script src="/js/code-block.js"></script>
+
+<script src="/js/main.js"></script>
+
+<script src="/js/libs/anime.min.js"></script>
+
+
+<!-- local search -->
+
+
+<!-- lazyload -->
+
+
+<div class="">
+    <!-- home page -->
+    
+
+    <!-- post page -->
+    
+        <!-- post-helper -->
+        
+<script src="/js/post/post-helper.js"></script>
+
+
+        <!-- toc -->
+        
+
+        <!-- copyright-info -->
+        
+
+        <!-- share -->
+        
+    
+
+    <!-- categories page -->
+    
+
+    <!-- links page -->
+    
+
+    <!-- photos page -->
+    
+
+    <!-- tools page -->
+    
+</div>
+
+<!-- mermaid -->
+
+
+<!-- pjax -->
+
+
+
+</body>
+</html>
